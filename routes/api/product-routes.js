@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
     ],
   })
 
-    .then(DataTransferItem => res.status(200).json(data))
+    .then(Data => res.status(200).json(Data))
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
